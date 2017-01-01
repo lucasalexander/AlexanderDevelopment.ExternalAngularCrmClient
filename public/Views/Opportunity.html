@@ -1,0 +1,5 @@
+<h2>Opportunities</h2>
+<a class="btn btn-link" ng-show="userInfo.isAuthenticated" ng-click="RetrieveOpportunities()">Show opportunities</a>
+<div ng-repeat="opp in vm.opportunities">
+    {{opp.name}}
+</div>

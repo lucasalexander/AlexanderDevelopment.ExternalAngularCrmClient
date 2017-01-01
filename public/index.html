@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html ng-app="app"> 
+<head>
+    <title>Demo External AngularJS-CRM application</title>         
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <base href="/" />
+</head>
+<body>
+    <div class="container">
+        <h1>Demo External AngularJS-CRM application</h1>
+        <div class="navbar">
+            <ul class="nav navbar-nav">
+                <li><a href="/">Home</a></li>
+                <li ng-show="userInfo.isAuthenticated"><a href="/opportunities">Opportunities</a></li>
+            </ul>
+        </div>
+        <div ng-view></div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.min.js"></script>
+    <script src="./app.js"></script>
+    <script src="./Scripts/adal.js"></script>
+    <script src="./Scripts/adal-angular.js"></script>
+    <script src="./Scripts/es6promise.min.js"></script>
+    <script src="./Scripts/webapisdk.js"></script>
+    <script src="./Controllers/HomeController.js"></script>
+    <script src="./Controllers/OpportunityController.js"></script>
+</body>
+</html>
