@@ -1,0 +1,11 @@
+{
+  "name": "alexanderdevelopment-externalangularclient",
+  "version": "0.0.1",
+  "main": "app.js",
+  "author": "Lucas Alexander",
+  "license": "Apache-2.0",
+  "scripts": {"start": "node app.js"},
+  "dependencies": {
+    "express": "^4.0.0"
+  }
+}
